@@ -1,0 +1,147 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseClientLayout" template="/WEB-INF/layout/client/base.jsp">
+        <put-attribute name="title" value="..."/>
+        <put-attribute name="header" value="/WEB-INF/layout/client/header.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/client/footer.jsp"/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="content2" value=""/>
+    </definition>
+    <definition name="index" extends="baseClientLayout">
+        <put-attribute name="title" value="Nhà Hàng Thành Văn "/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/index.jsp"/>
+    </definition>
+    <definition name="lobby-detail" extends="baseClientLayout">
+        <put-attribute name="title" value="Sảnh Cưới "/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/lobby-detail.jsp"/>
+    </definition>
+    <definition name="service" extends="baseClientLayout">
+        <put-attribute name="title" value="Dịch vụ"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/service.jsp"/>
+    </definition>
+    <definition name="menu" extends="baseClientLayout">
+        <put-attribute name="title" value="Thực Đơn"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/menu.jsp"/>
+    </definition>
+    <definition name="dishDetail" extends="baseClientLayout">
+        <put-attribute name="title" value="Thực Đơn"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/dish-detail.jsp"/>
+    </definition>
+    <definition name="sign-up" extends="baseClientLayout">
+        <put-attribute name="title" value="Đăng ký"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/sign-up.jsp"/>
+    </definition>
+    <definition name="confirm-sign-up" extends="baseClientLayout">
+        <put-attribute name="title" value="Xác nhận"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/confirm-sign-up.jsp"/>
+    </definition>
+    <definition name="sign-in" extends="baseClientLayout">
+        <put-attribute name="title" value="Đăng nhập"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/sign-in.jsp"/>
+    </definition>
+    <definition name="feedback" extends="baseClientLayout">
+        <put-attribute name="title" value="Liên hệ"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/feedback.jsp"/>
+    </definition>
+    <definition name="contification" extends="baseClientLayout">
+        <put-attribute name="title" value="Thông báo"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/contification.jsp"/>
+    </definition>
+      <definition name="order" extends="baseClientLayout">
+        <put-attribute name="title" value="Danh sách đơn đặt tiệc"/>
+        <put-attribute name="content2" value="/WEB-INF/jsp/client/order.jsp"/>
+    </definition>
+    <definition name="booking" extends="baseClientLayout">
+        <put-attribute name="title" value="Đặt tiệc"/>
+        <put-attribute name="content2" value="/WEB-INF/jsp/client/booking.jsp"/>
+    </definition>
+    <definition name="booking-item" extends="baseClientLayout">
+        <put-attribute name="title" value="Đặt món ăn"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/booking-item.jsp"/>
+    </definition>
+    <definition name="payment" extends="baseClientLayout">
+        <put-attribute name="title" value="Thanh toán"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/payment.jsp"/>
+    </definition>
+    <definition name="payment-success" extends="baseClientLayout">
+        <put-attribute name="title" value="Thanh toán"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/payment-success.jsp"/>
+    </definition>
+     <definition name="user-order" extends="baseClientLayout">
+        <put-attribute name="title" value="Đơn hàng"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/client/user-order.jsp"/>
+    </definition>
+    
+    <definition name="baseAdminLayout" template="/WEB-INF/layout/admin/base.jsp">
+        <put-attribute name="title" value="Admin Management"/>
+        <put-attribute name="header" value="/WEB-INF/layout/admin/header.jsp"/>
+        <put-attribute name="sidebar" value="/WEB-INF/layout/admin/sidebar.jsp"/>
+        <put-attribute name="content" value="base"/>
+    </definition>
+    <definition name="admin" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/admin.jsp"/>
+    </definition>
+    <definition name="admin-profile" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/admin-profile.jsp"/>
+    </definition>
+    <definition name="admin-feedback" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/feedback.jsp"/>
+    </definition>
+    
+    <definition name="staff" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/staff.jsp"/>
+    </definition>
+    <definition name="add-staff" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/add-staff.jsp"/>
+    </definition>
+    <definition name="edit-staff" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/edit-staff.jsp"/>
+    </definition>
+    
+     <definition name="lobby-admin" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/lobby.jsp"/>
+    </definition>
+    <definition name="add-lobby" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/add-lobby.jsp"/>
+    </definition>
+     <definition name="edit-lobby" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/edit-lobby.jsp"/>
+    </definition>
+    
+    <definition name="service-admin" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/service.jsp"/>
+    </definition>
+    <definition name="add-service" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/add-service.jsp"/>
+    </definition>
+    <definition name="edit-service" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/edit-service.jsp"/>
+    </definition>
+    
+    <definition name="bill-day-stats" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/bill-day-stats.jsp"/>
+    </definition>
+    <definition name="bill-month-stats" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/bill-month-stats.jsp"/>
+    </definition>
+    <definition name="bill-quarter-stats" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/bill-quarter-stats.jsp"/>
+    </definition>
+    <definition name="bill-year-stats" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/bill-year-stats.jsp"/>
+    </definition>
+    
+    <definition name="order-month-stats" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/order-month-stats.jsp"/>
+    </definition>
+    <definition name="order-quarter-stats" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/order-quarter-stats.jsp"/>
+    </definition>
+    <definition name="order-year-stats" extends="baseAdminLayout">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/order-year-stats.jsp"/>
+    </definition>
+    
+    
+</tiles-definitions>

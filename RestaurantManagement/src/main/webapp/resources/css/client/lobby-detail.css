@@ -1,0 +1,280 @@
+.detail-header {
+    margin-left: -13% !important;
+    width: 123.8%;
+}
+
+.detail-header img {
+    object-fit: cover;
+    height: 300px
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin-top: -15%;
+    margin-bottom: 18%;
+}
+
+.lobby-name {
+    margin-bottom: 15px;
+    color: c47135;
+    font-family: initial;
+}
+
+hr {
+    border-width: 3px;
+    background-color: #ff984e;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+p.text-des {
+    font-family: initial;
+    margin: 0;
+    line-height: 1.4;
+    color: inherit;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/*button thu vien*/
+.snip1547 {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 17.5px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 15px 0px;
+  outline: none;
+  padding: 0 43px 0 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.snip1547 span {
+  background-color: #c72544;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 20px;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.snip1547:after {
+  font-family: FontAwesome;
+  content: "\f0da";
+  background-color: #c72544;
+  position: absolute;
+  right: 0%;
+  height: 48px;
+  padding: 1px 20px;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.snip1547:hover span,
+.snip1547.hover span {
+  background-color: #ba2340;
+}
+
+.snip1547:hover:after,
+.snip1547.hover:after {
+  margin-top: -5px;
+  background-color: #da3655;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 100%;
+    cursor:pointer; 
+}
+
+table {
+    text-align: center;
+    margin-top: 25px;
+}
+
+table tr:nth-child(1) th {
+    width: 300px;
+    padding: 15px;
+}
+
+
+table td {
+    padding: 10px;
+}
+
+table tr td:nth-child(1) {
+     background-color: lightgreen;
+}
+
+.promotion {
+    margin: 50px 0;
+}
+
+.promotion ul {
+    margin-left: 30px;
+}
+
+.promotion ul li {
+  list-style: none;
+  position: relative;
+  padding: 3px 0 2px 25px;
+}
+
+.promotion ul li::before {
+  content: '*';
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+    
+/* image */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.more-lob:hover {
+    text-decoration: none;
+}
+
+.lobby-more {
+    margin-bottom: 70px;
+}
+
+/*update*/
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*update comment*/

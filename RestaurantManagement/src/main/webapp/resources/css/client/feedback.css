@@ -1,0 +1,66 @@
+.detail-header {
+    margin-left: -13% !important;
+    width: 123.8%;
+}
+
+.detail-header img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin-top: -15%;
+    margin-bottom: 18%;
+}
+
+.captcha {
+    margin-top: 20px;
+}
+
+.captcha > div:first-child {
+    width: 200px;
+    height: 50px;
+    background-image: url("https://oe.amizone.net/login-files/bg-captcha.png");
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5;
+    user-select: none;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.btn-captcha {
+    margin-top: 10px;
+}
+
+.btn-captcha input {
+    padding: 5px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: blue;
+}
+
+.btn-captcha div {
+    text-align: end;
+}
+
+.btn-captcha button {
+    width: 100px;
+    padding: 10px;
+    background-color: #42aa42;
+    
+}
+
+.btn-captcha button:hover {
+    background-color: #2a822a;
+    color: wheat;
+}

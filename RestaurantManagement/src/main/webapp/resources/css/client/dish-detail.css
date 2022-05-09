@@ -1,0 +1,89 @@
+.detail-header {
+    margin-left: -13% !important;
+    width: 123.8%;
+}
+
+.detail-header img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin-top: -15%;
+    margin-bottom: 18%;
+}
+
+.dish-name {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.img > img {
+    width: 100%;
+    height: 700px;
+}
+
+.dish-description {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*custom button*/
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: none;
+    color: #e58946;
+    z-index: 2;
+    border: none;
+    padding: 5px;
+    left: 0;
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: none;
+    color: #e58946;
+    z-index: 2;
+    border: none;
+    padding: 5px;
+    right: 0;
+}
+
+.dish{
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.dish:hover {
+    text-decoration: none;
+}
+
+.dish div {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    color: black;
+}
+
+
+hr {
+    border-width: 3px;
+    background-color: #ff984e;
+    width: 30%;
+    margin-bottom: 30px;
+}
